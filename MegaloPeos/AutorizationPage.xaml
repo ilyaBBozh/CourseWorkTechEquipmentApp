@@ -1,0 +1,48 @@
+﻿<Page x:Class="MegaloPeos.AutorizationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MegaloPeos"
+      mc:Ignorable="d" 
+      d:DesignHeight="527.062" d:DesignWidth="937"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      Title="AutorizationPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="7*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1" Grid.Row="1" Background="White">
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="10" RenderingBias="Quality" ShadowDepth="3" Direction="272"/>
+            </Grid.Effect>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Text="Создать аккаунт" Style="{StaticResource MaterialDesignHeadline5TextBlock}" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <TextBox Grid.Row="1" Grid.Column="0" x:Name="txtLogin" Style="{StaticResource MaterialDesignOutlinedTextBox}" materialDesign:HintAssist.Hint="Логин" Width="250" Height="50"></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtName" Style="{StaticResource MaterialDesignOutlinedTextBox}" materialDesign:HintAssist.Hint="Имя" Width="250" Height="50"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="0" x:Name="txtSecondName" Style="{StaticResource MaterialDesignOutlinedTextBox}" materialDesign:HintAssist.Hint="Фамилия" Width="250" Height="50"></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtThirdName" Style="{StaticResource MaterialDesignOutlinedTextBox}" materialDesign:HintAssist.Hint="Отчество" Width="250" Height="50"></TextBox>
+            <PasswordBox Grid.Row="3" Grid.Column="0" x:Name="txtPassword" Style="{StaticResource MaterialDesignOutlinedPasswordBox}" materialDesign:HintAssist.Hint="Пароль" Width="250" Height="50"></PasswordBox>
+            <PasswordBox Grid.Row="3" Grid.Column="1" x:Name="txtPassword1" Style="{StaticResource MaterialDesignOutlinedPasswordBox}" materialDesign:HintAssist.Hint="Повторите пароль" Width="250" Height="50"></PasswordBox>
+            <Button x:Name="btnCreateAccount" Foreground="White" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource MaterialDesignRaisedButton}" Content="Создать аккаунт" Width="150" Click="btnCreateAccount_Click" Margin="91,29,93,42"/>
+            <Button x:Name="btnReturnToLogIn" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource MaterialDesignToolButton}" Content="У меня уже есть аккаунт" Width="170" Margin="82,66,82,5" Click="btnReturnToLogIn_Click"></Button>
+        </Grid>
+    </Grid>
+</Page>
