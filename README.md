@@ -8,4 +8,4 @@ Goal of this desktop application is separating engineers equipment and accountin
 + Material Design Themes
 
 ## Program showcase:
-
+[Watch this](https://drive.google.com/file/d/1NvS26UdRXsMBdDOaCFVR4V958aW5dm_B/view?usp=sharing)
